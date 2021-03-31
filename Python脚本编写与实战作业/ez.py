@@ -8,22 +8,10 @@ my_hp = hp - enemy_power
 enemy_final_hp = enemy_hp - my_power
 两个 hp 进行对比，血量剩余多的人获胜
 """
+from hero import Hero
 
 
-class EZ:
+class EZ(Hero):
     hp = 1100
     power = 190
-
-    def fight(self, enemy_hp, enemy_power):
-        self.enemy_power = enemy_power
-
-        my_final_hp = self.hp - enemy_power
-        enemy_final_hp = enemy_hp - self.power
-
-        if my_final_hp > enemy_final_hp:
-            print(f"ez的剩余血量是{my_final_hp}，ez赢了")
-
-        elif my_final_hp < enemy_final_hp:
-            print(f"ez的剩余血量是{my_final_hp}，敌人赢了")
-        else:
-            print(f"ez的剩余血量是{my_final_hp}，双方打平手")
+    name = "EZ"
