@@ -10,7 +10,6 @@ enemy_final_hp = enemy_hp - my_power
 """
 from hero import Hero
 
-
 class EZ(Hero):
     hp = 1100
     power = 190

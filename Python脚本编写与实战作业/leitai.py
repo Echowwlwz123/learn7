@@ -3,14 +3,14 @@ from Python脚本编写与实战作业.ez import EZ
 from police import Police
 from timo import Timo
 
-
-class Leitai:
+if __name__ == '__main__':
     ez = EZ()
     jinx = Jinx()
     timo = Timo()
     police = Police()
     ez.speak_lines("我是EZ，我就是打败天下无敌手")
     jinx.speak_lines("Jinx来也")
+
     ez.fight(jinx.hp, jinx.power)
     jinx.fight(ez.hp, ez.power)
 
