@@ -1,0 +1,66 @@
+add:
+  datas:
+    - [ 0,0,0 ]
+    - [ 1,1,2 ]
+    - [ 0.1,0.2,0.3 ]
+    - [ 0.1,-0.2,0.3 ]
+    - [ 100,200,300 ]
+    - [ -1,-2,-3 ]
+  myid:
+    - 'zero'
+    - 'int'
+    - 'float'
+    - 'failfloat'
+    - 'bigint'
+    - 'negtive'
+subtr:
+  datas:
+    - [ 0,0,0 ]
+    - [ 1,1,0 ]
+    - [ 0.2,0.1,0.1 ]
+    - [ 0.3,-0.2,0.1 ]
+    - [ 300,100,200 ]
+    - [ -2,-1,-1 ]
+    - [ 0,1,-1 ]
+  myid:
+    - 'zero'
+    - 'int'
+    - 'float'
+    - 'failfloat'
+    - 'bigint'
+    - 'negtive'
+    - 'nagetive2'
+multi:
+  datas:
+    - [ 0,0,0 ]
+    - [ 1,1,1 ]
+    - [ 0.2,0.1,0.02 ]
+    - [ 0.3,-0.2,0.1 ]
+    - [ 300,100,30000 ]
+    - [ -2,-1,2 ]
+    - [ 0,1,0 ]
+  myid:
+    - 'zero'
+    - 'int'
+    - 'float'
+    - 'failfloat'
+    - 'bigint'
+    - 'negtive'
+    - 'zero2'
+divi:
+  datas:
+    - [ 1,0,0 ]
+    - [ 1,1,1 ]
+    - [ 0.2,0.1,2 ]
+    - [ 0.3,-0.2,0.1 ]
+    - [ 300,100,3 ]
+    - [ -2,-1,2 ]
+    - [ 0,1,0 ]
+  myid:
+    - 'zero'
+    - 'int'
+    - 'float'
+    - 'failfloat'
+    - 'bigint'
+    - 'negtive'
+    - 'zero2'

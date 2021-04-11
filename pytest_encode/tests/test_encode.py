@@ -11,3 +11,4 @@ from pytest_encode import logger
 def test_mm(name):
     logger.info("测试案例ENCODING")
     print(name)
+
