@@ -1,0 +1,32 @@
+@startuml
+        participant 企业微信首页 as fmian
+        participant 注册页面 as register
+        participant 登录页面 as login
+        participant 企业微信主页面 as main
+        participant 通讯录页面 as contact
+        participant 添加成员页面 as add_member
+
+        fmian->register:点击注册跳转到注册页面
+        fmian->login:点击登录跳转到登录页面
+
+        alt 成功情况
+        register->register:点击注册，注册成功
+
+        else 失败情况
+        register->register:请输入正确的名称，注册失败
+
+        login->register:点击注册跳转到注册页面
+        login->main:跳转到企业微信主界面
+
+
+        main->add_member:跳转到添加成员页面
+        main->contact:跳转到通讯录页面
+
+        add_member->add_member:添加成员，点击保存
+        add_member->contact:跳转到通讯录页面
+
+        contact->contact:检查是否成功添加成员
+        contact->add_member:跳转到添加成员页面
+
+
+        @enduml
