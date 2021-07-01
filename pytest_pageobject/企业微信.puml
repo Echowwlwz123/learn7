@@ -5,6 +5,8 @@
         participant 企业微信主页面 as main
         participant 通讯录页面 as contact
         participant 添加成员页面 as add_member
+        participant 添加部门页面 as add_department
+        participant 导入通讯录页面 as bath_members
 
         fmian->register:点击注册跳转到注册页面
         fmian->login:点击登录跳转到登录页面
@@ -25,8 +27,20 @@
         add_member->add_member:添加成员，点击保存
         add_member->contact:跳转到通讯录页面
 
+        contact->add_department:跳转到添加部门页面
+        add_department->add_department:添加部门
+        contact->contact:检查是否添加成功部门
+        contact->bath_members:跳转到导入通讯录页面
+
+
         contact->contact:检查是否成功添加成员
         contact->add_member:跳转到添加成员页面
+
+        main->bath_members:跳转到导入通讯录页面
+
+        bath_members->bath_members:文件导入通讯录
+        bath_members->contact:跳转到通讯录页面
+        contact->contact:检查是否添加成功成员
 
 
         @enduml

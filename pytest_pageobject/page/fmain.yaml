@@ -1,0 +1,3 @@
+- by: CSS_SELECTOR
+  locator: ".index_top_operation_loginBtn"
+  action: click

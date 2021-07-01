@@ -4,7 +4,7 @@
 # @FileName: base_page.py
 # @Software: PyCharm
 import yaml
-from selenium.webdriver.android.webdriver import WebDriver
+from appium.webdriver.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 
 

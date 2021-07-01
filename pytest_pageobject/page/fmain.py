@@ -11,12 +11,7 @@ from page.register import Register
 
 
 class Fmain(BasePage):
-    _base_url = "https://work.weixin.qq.com/"
-
-    def goto_register(self):
-        self.find(By.CSS_SELECTOR, ".index_head_info_pCDownloadBtn").click()
-        return Register(self._driver)
 
     def goto_login(self):
-        self.find(By.CSS_SELECTOR, ".index_top_operation_loginBtn").click()
+        self.steps("../page/fmain.yaml")
         return Login(self._driver)
